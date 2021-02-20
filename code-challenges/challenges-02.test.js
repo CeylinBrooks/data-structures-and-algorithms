@@ -8,8 +8,13 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 ------------------------------------------------------------------------------------------------ */
 
+const thirdArr = [];
 const raisedToTheThird = (arr) => {
-  Math.pow(3)
+  arr.forEach(value => {
+    let val = Math.pow(value,3);
+    thirdArr.push(val);
+  });
+  return thirdArr;
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -20,8 +25,8 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 ------------------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
-  const concat = str;
-  return`${str} the end`;
+  
+  return `${str} The end.`;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -38,7 +43,7 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  arr.push(arr[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
