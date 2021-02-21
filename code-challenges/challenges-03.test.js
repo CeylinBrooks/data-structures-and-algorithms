@@ -22,7 +22,12 @@ function lower(str) {
 }
 
 const updateAnimal = (arr, callback) => {
-  // Solution code here...
+  const newAnimal = [];
+  arr.forEach(animal => {
+    const 
+    newAnimal.push(animal);
+  });
+  return newAnimal;
 };
 
 /* ------------------------------------------------------------------------------------------------
