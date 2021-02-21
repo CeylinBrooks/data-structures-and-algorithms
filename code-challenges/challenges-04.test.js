@@ -8,12 +8,12 @@ Write a function called addTwo that takes in an array and adds two to every valu
 
 const addTwo = (arr) => {
   const addArr = [];
-  const regEx = .match( +(i+2))
+  // const regEx = ;
   for (i = 0, i < arr.length, i ++) {
-    
-  }
+    number +2;
+  };
   return addArr;
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -69,7 +69,13 @@ Write a function named containsWorld that takes in a string or number of any len
 ------------------------------------------------------------------------------------------------ */
 
 const containsWorld = (input) => {
-  // Solution code here...
+  const result = /^\d\'world'/.test(input);
+  if (input){
+  return true;
+  } else {
+    return false
+  }
+
 };
 
 /* ------------------------------------------------------------------------------------------------
