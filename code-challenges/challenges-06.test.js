@@ -55,7 +55,8 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  // Solution code here...
+  charArray.sort();
+  return charArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,13 +66,15 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
 
 const getCourseKeys = (obj) => {
-  // Solution code here...
+
+  return objects;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -83,7 +86,13 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-  // Solution code here...
+
+  if (obj) {
+    return true;
+
+  } else {
+
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
