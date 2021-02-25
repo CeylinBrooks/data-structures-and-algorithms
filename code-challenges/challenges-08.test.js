@@ -21,8 +21,18 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 ------------------------------------------------------------------------------------------------ */
 
 const typeNum = (arr) => {
+<<<<<<< HEAD
   const arr.filter;
   return arr;
+=======
+  const numArr = arr.filter(value => {
+    if (typeof value === 'number'){
+      return true;
+    } else {
+      return false;
+    })
+  return numArr;
+>>>>>>> d5ff3a158d058145f74923ffb05709366c940336
 };
 
 /* ------------------------------------------------------------------------------------------------
