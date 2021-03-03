@@ -55,21 +55,24 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  charArray.sort(function(i,j){
-    if (i.children.length > j.children.length){
+  function compare(i, right){
+    if(i.children.length > right.children.length){
       return 1;
-    } else if (i.children.length < j.children.length){
-      return -1;
-    } else {(i.house < j.house)
+    } else if(i.children.length < right.children.length){
       return -1;
     } else {
-      return 0;
-     }
+      if(i.house > right.house){
+        return 1;
+      } else if(i.house < right.house){
+        return -1;
+      } else {
+        return 0;
+      }
     }
-  });
+  }
+  charArray.sort(compare);
   return charArray;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
