@@ -55,15 +55,15 @@ let characters = [
 ];
 
 const sortByChildren = (charArray) => {
-  function compare(i, right){
-    if(i.children.length > right.children.length){
+  function compare(i, j){
+    if(i.children.length > j.children.length){
       return 1;
-    } else if(i.children.length < right.children.length){
+    } else if(i.children.length < j.children.length){
       return -1;
     } else {
-      if(i.house > right.house){
+      if(i.house > j.house){
         return 1;
-      } else if(i.house < right.house){
+      } else if(i.house < j.house){
         return -1;
       } else {
         return 0;
@@ -87,8 +87,7 @@ const courseInfo = {
 };
 
 const getCourseKeys = (obj) => {
-
-  return objects;
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,12 +99,10 @@ Write a function named checkValues that takes in an object and a value and retur
 ------------------------------------------------------------------------------------------------ */
 
 const checkValues = (obj, value) => {
-
-  if (obj) {
+  if (Object.values(obj) == value) {
     return true;
-
   } else {
-
+    return false;
   }
 };
 
@@ -129,7 +126,12 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  const results = [];
+  Object.entries(obj).forEach( numArr => {
+    let numVar = numArr.join(': ');
+    results.push(numVar);
+  });
+  return results;
 };
 
 
@@ -142,7 +144,8 @@ Write a function named getHouses that returns a new array containing the names o
 
 const getHouses = (arr) => {
   let houses = [];
-  // Solution code here...
+  for (let i in arr)
+  houses.push(arr[i].house);
   return houses;
 };
 
@@ -159,8 +162,12 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+  for (let i in arr){
+    if (arr[i].children.length > 0 && character === arr[i].name){
+      return true;
+    }
+  }
+  return false;
 };
 
 /* ------------------------------------------------------------------------------------------------
