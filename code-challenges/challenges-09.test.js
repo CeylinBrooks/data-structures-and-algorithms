@@ -19,7 +19,7 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj){
-  const arr = [];
+  return Object.entries(obj).map(values => `<li>${values.join(': ')}</li>`);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-  const additionValueArray = [];
+  return arr.reduce((arrNum, num ) => arrNum + num, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
-  // Solution code here...
+  return arr.reduce((purchases, cost) => purchases + cost.purchasePrice, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  // Solution code here...
+  return arr.reduce((arrNums, count) => arrNums = count++);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +118,10 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  // Solution code here...
+  return  arr.reduce((newArr, person) => {
+    newArr.push(person.name);
+    return newArr;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -130,7 +133,13 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  const results = [];
+  const letters = str.split('');
+  letters.reduce((accumulator, letter)=> {
+    accumulator.splice(0, 0, letter);
+    return accumulator;
+  }, results);
+  return results.join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
