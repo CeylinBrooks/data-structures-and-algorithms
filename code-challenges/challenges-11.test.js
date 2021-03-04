@@ -101,6 +101,7 @@ const validatePhoneNumber = (phoneNumber) => {
   return regex.test(phoneNumber);
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
