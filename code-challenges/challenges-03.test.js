@@ -53,39 +53,39 @@ HINT: Beware... JS default is "Lexical" ordering.
 ------------------------------------------------------------------------------------------------ */
 
 const sortNumbers = (arr) => {
-  arr.sort(function (i, j){
+  arr.sort(function (i, j) {
     if (i > j) {
       return 1;
     } else if (i < j) {
       return -1;
-    }else {
+    } else {
       return 0;
     }
-  })
-    return arr;
-  };
-
-  /* ------------------------------------------------------------------------------------------------
-  CHALLENGE 4
-  
-  Write a function named sortBackwards that takes in an array of numbers and returns the same array, with the numbers sorted, largest to smallest.
-  
-  HINT: Do it with a custom sort callback, not with using `.reverse()`. ;) 
-  ------------------------------------------------------------------------------------------------ */
-
-  const sortBackwards = (arr) => {
-    arr.sort(function(a, b){
-      if (a > b) {
-        return -1;
-      } else if (a < b) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
-    return arr;
-  };
+  });
+  return arr;
 };
+
+/* ------------------------------------------------------------------------------------------------
+CHALLENGE 4
+ 
+Write a function named sortBackwards that takes in an array of numbers and returns the same array, with the numbers sorted, largest to smallest.
+ 
+HINT: Do it with a custom sort callback, not with using `.reverse()`. ;) 
+------------------------------------------------------------------------------------------------ */
+
+const sortBackwards = (arr) => {
+  arr.sort(function (i, j) {
+    if (j > i) {
+      return 1;
+    } else if (j < i) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+  return arr;
+};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -98,7 +98,16 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
-  // Solution code here...
+  arr.sort(function (i, j) {
+    if (i > j) {
+      return 1;
+    } else if (i < j) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -115,8 +124,20 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
-  // Solution code here...
+  function compare(left, right){
+    if(left.price > right.price){
+      return 1;
+    } else if(left.price < right.price){
+      return -1;
+    } else {
+      return 0;
+    }
+  }
+  arr.sort(compare);
+  return arr;
 };
+  
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
