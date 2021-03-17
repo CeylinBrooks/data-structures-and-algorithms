@@ -7,7 +7,8 @@ Write a function named longestString that takes in an array of strings and retur
 ------------------------------------------------------------------------------------------------ */
 
 const longestString = (arr) => {
-// Solution code here...
+let array = arr.map(value => value.length);
+return array.indexOf(Math.max(...array));
 };
   
 /* ------------------------------------------------------------------------------------------------
@@ -19,7 +20,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 ------------------------------------------------------------------------------------------------ */
 
 const firstLetters = (arr) => {
-  // Solution code here...
+  return arr.map(value => value[0]);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,7 +32,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 ------------------------------------------------------------------------------------------------ */
 
 const findHappiness = (arr) => {
-  // Solution code here...
+  return arr.filter(str => str.includes(':)'));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,7 +44,10 @@ For example, (123) 456-7890 returns 1234567890
 ------------------------------------------------------------------------------------------------ */
 
 const standardizePhoneNumbers = (arr) => {
-  // Solution code here...
+  return arr.reduce((a,b) => {
+    a.push(b.replace(/[\s()-]/gm, ''));
+    return a;
+  }, []);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -55,7 +59,7 @@ For example, 'abcdefg' returns 'bdf'
 ------------------------------------------------------------------------------------------------ */
 
 const onlyOddChars = (str) => {
-  // Solution code here...
+  return str.split('').filter((value,index) => index % 2 !== 0).join('');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -65,7 +69,12 @@ Write a function named allHappy that takes in an array of strings and returns a 
 ------------------------------------------------------------------------------------------------ */
 
 const allHappy = (arr) => {
-  // Solution code here...
+  return arr.reduce((a,b) => {
+    if(!b.includes(':)')){
+      a = false;
+    }
+    return a;
+  }, true);
 };
 
 /* ------------------------------------------------------------------------------------------------
