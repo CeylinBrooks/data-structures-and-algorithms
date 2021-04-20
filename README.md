@@ -18,7 +18,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 ## Table of Contents
 
 # Challenge Summary
-<!-- Short summary or background information -->
+Write a function called insertShiftArray which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
 
 ## Challenge Description
 <!-- Description of the challenge -->
