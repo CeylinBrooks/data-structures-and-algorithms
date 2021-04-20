@@ -83,3 +83,7 @@ From the root of the `data-structures-and-algorithms` folder, execute the follow
 #### Live Tests
 
 Note that when you check your code into GitHub, all of your tests will automatically execute. These results should match your own, and will be found on the  **Actions** tab
+
+
+#### Table of Contents
+
