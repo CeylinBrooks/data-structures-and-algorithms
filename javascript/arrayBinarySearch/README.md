@@ -9,4 +9,5 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 The approach to challenge was to utilize the method...
 
 ## Solution
-<!-- Embedded whiteboard image -->
+Screen Shot 2021-04-21 at 4.20.33 PM![image](https://user-images.githubusercontent.com/66962689/115622633-ba1e5200-a2bd-11eb-9147-d863a80bc13c.png)
+
