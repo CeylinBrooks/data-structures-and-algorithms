@@ -9,3 +9,4 @@ Zip the two linked lists together into one so that the nodes alternate between t
 The approach to challenge was to utilize the method to use a loop to zip these two lists together.
 
 ## Solution
+![Uploading image.png…]()
