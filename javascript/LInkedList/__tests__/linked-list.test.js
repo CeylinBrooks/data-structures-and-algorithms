@@ -8,3 +8,4 @@ describe('Linked List', () => {
     expect(true).toBeTruthy();
   });
 });
+∏

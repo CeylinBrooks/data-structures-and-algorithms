@@ -8,7 +8,7 @@
     "test": "jest --verbose --coverage",
     "lint": "eslint '**/*.js'"
   },
-  "author": "",
+  "author": "\"\",",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
@@ -16,5 +16,16 @@
     "jest": "^26.0.1",
     "mustache": "^4.0.1",
     "supertest": "^4.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CeylinBrooks/data-structures-and-algorithms.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "bugs": {
+    "url": "https://github.com/CeylinBrooks/data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/CeylinBrooks/data-structures-and-algorithms#readme"
 }
