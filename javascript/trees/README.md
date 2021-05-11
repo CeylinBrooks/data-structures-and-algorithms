@@ -6,7 +6,8 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 Create stacks and queues
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+<img width="1196" alt="Screen Shot 2021-05-10 at 4 55 45 PM" src="https://user-images.githubusercontent.com/66962689/117752451-64fa9f80-b1dc-11eb-885b-70422f8852ea.png">
+
 
 ## API
 <!-- Description of each method publicly available to your Stack and Queue-->
