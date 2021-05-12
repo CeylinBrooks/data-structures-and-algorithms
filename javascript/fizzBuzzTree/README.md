@@ -1,4 +1,5 @@
 
+
 # FizzBuzzTree
 Write a function called FizzBuzzTree which takes a k-ary tree as an argument.
 
@@ -21,3 +22,7 @@ space(1)
 <!-- Description of each method publicly available in each of your trees -->
 
 [Pull Request](https://github.com/CeylinBrooks/data-structures-and-algorithms/pull/56/)
+
+## Solution 
+<img width="1475" alt="Screen Shot 2021-05-12 at 3 26 53 PM" src="https://user-images.githubusercontent.com/66962689/118041229-2843bb00-b338-11eb-937e-fd5fc023edb8.png">
+
