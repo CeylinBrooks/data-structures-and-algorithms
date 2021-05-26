@@ -47,4 +47,6 @@ ALGORITHM Merge(left, right, arr)
     else
        set remaining entries in arr to remaining values in left
        
-       <img width="1116" alt="Screen Shot 2021-05-25 at 8 43 34 PM" src="https://user-images.githubusercontent.com/66962689/119590201-ebe17780-bd99-11eb-8b67-f7849aa68f2b.png">
+       
+       
+  <img width="1116" alt="Screen Shot 2021-05-25 at 8 43 34 PM" src="https://user-images.githubusercontent.com/66962689/119590201-ebe17780-bd99-11eb-8b67-f7849aa68f2b.png">
